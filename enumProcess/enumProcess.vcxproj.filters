@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{edb858aa-5a76-4202-98ac-9850075f68f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Psapi">
+      <UniqueIdentifier>{f7f18026-f84f-43b4-866a-bba48eb529ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolHelp">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="PDH">
+      <UniqueIdentifier>{b7cba1a6-e05a-40cc-b453-812e1c70a867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="design">
+      <UniqueIdentifier>{b89dd791-1fd9-422d-9118-4894ff44b840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party">
+      <UniqueIdentifier>{1d2fe438-469b-4c69-9662-ac641455f20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\sqlite3">
+      <UniqueIdentifier>{905a165b-e070-4ee1-9045-d9da20a8d4c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\tinyxml">
+      <UniqueIdentifier>{7a4fb16d-9f08-45d4-b875-6b36730236aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbwritter">
+      <UniqueIdentifier>{f8df4faa-21db-4d98-a20b-7c3b2931f91d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\doc\design\export framework.cd">
+      <Filter>design</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\tinyxml\tinystr.h">
+      <Filter>third-party\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\tinyxml\tinyxml.h">
+      <Filter>third-party\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="report.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="IPidReceiver.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMemoryInfo.h">
+      <Filter>Psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="DllEnumerator.h">
+      <Filter>Psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverEnumerator.h">
+      <Filter>Psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryRegionEnumerator.h">
+      <Filter>Psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceInfo.h">
+      <Filter>Psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessEnumerator.h">
+      <Filter>Psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="thProcessEnumerator.h">
+      <Filter>ToolHelp</Filter>
+    </ClInclude>
+    <ClInclude Include="thHeapEnumerator.h">
+      <Filter>ToolHelp</Filter>
+    </ClInclude>
+    <ClInclude Include="thModuleEnumerator.h">
+      <Filter>ToolHelp</Filter>
+    </ClInclude>
+    <ClInclude Include="thThreadEnumerator.h">
+      <Filter>ToolHelp</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="PdhTest.h">
+      <Filter>PDH</Filter>
+    </ClInclude>
+    <ClInclude Include="PdhSample.h">
+      <Filter>PDH</Filter>
+    </ClInclude>
+    <ClInclude Include="PerfObjEnumerator.h">
+      <Filter>PDH</Filter>
+    </ClInclude>
+    <ClInclude Include="PdhProcess.h">
+      <Filter>PDH</Filter>
+    </ClInclude>
+    <ClInclude Include="pdhProcessEnumerator.h">
+      <Filter>PDH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\sqlite3\sqlite3.h">
+      <Filter>third-party\sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\sqlite3\sqlite3ext.h">
+      <Filter>third-party\sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="SqliteWritter.h">
+      <Filter>dbwritter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\third_party\tinyxml\tinystr.cpp">
+      <Filter>third-party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxml.cpp">
+      <Filter>third-party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlerror.cpp">
+      <Filter>third-party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlparser.cpp">
+      <Filter>third-party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="report.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMemoryInfo.cpp">
+      <Filter>Psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="DllEnumerator.cpp">
+      <Filter>Psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverEnumerator.cpp">
+      <Filter>Psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryRegionEnumerator.cpp">
+      <Filter>Psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceInfo.cpp">
+      <Filter>Psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessEnumerator.cpp">
+      <Filter>Psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="thProcessEnumerator.cpp">
+      <Filter>ToolHelp</Filter>
+    </ClCompile>
+    <ClCompile Include="thHeapEnumerator.cpp">
+      <Filter>ToolHelp</Filter>
+    </ClCompile>
+    <ClCompile Include="thModuleEnumerator.cpp">
+      <Filter>ToolHelp</Filter>
+    </ClCompile>
+    <ClCompile Include="thThreadEnumerator.cpp">
+      <Filter>ToolHelp</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="PdhTest.cpp">
+      <Filter>PDH</Filter>
+    </ClCompile>
+    <ClCompile Include="PdhSample.cpp">
+      <Filter>PDH</Filter>
+    </ClCompile>
+    <ClCompile Include="PerfObjEnumerator.cpp">
+      <Filter>PDH</Filter>
+    </ClCompile>
+    <ClCompile Include="PdhProcess.cpp">
+      <Filter>PDH</Filter>
+    </ClCompile>
+    <ClCompile Include="pdhProcessEnumerator.cpp">
+      <Filter>PDH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\sqlite3\sqlite3.c">
+      <Filter>third-party\sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="SqliteWritter.cpp">
+      <Filter>dbwritter</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

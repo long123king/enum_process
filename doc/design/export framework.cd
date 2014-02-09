@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Data Getter">
+    <Position X="3.656" Y="1.521" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Counter Source">
+    <Position X="1.75" Y="1.469" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Export Framework">
+    <Position X="5.604" Y="1.51" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Xml Writter">
+    <Position X="7.573" Y="1.156" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="MongoDB Writter">
+    <Position X="7.573" Y="2.062" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Sqlite3 Writter">
+    <Position X="7.589" Y="2.948" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Console Writter">
+    <Position X="7.557" Y="3.844" Height="0.75" Width="1.7" />
+  </Comment>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

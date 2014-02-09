@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E5C0B5EE-CA6F-45BE-A551-8B5AFED0DDB8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>enumProcess</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)/third_party/tinyxml;$(SolutionDir)/third_party/sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)/third_party/tinyxml;$(SolutionDir)/third_party/sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\doc\design\export framework.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\sqlite3\sqlite3.h" />
+    <ClInclude Include="..\third_party\sqlite3\sqlite3ext.h" />
+    <ClInclude Include="..\third_party\tinyxml\tinystr.h" />
+    <ClInclude Include="..\third_party\tinyxml\tinyxml.h" />
+    <ClInclude Include="DllEnumerator.h" />
+    <ClInclude Include="DriverEnumerator.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="PdhProcess.h" />
+    <ClInclude Include="pdhProcessEnumerator.h" />
+    <ClInclude Include="PdhSample.h" />
+    <ClInclude Include="PdhTest.h" />
+    <ClInclude Include="PerfObjEnumerator.h" />
+    <ClInclude Include="SqliteWritter.h" />
+    <ClInclude Include="thHeapEnumerator.h" />
+    <ClInclude Include="IPidReceiver.h" />
+    <ClInclude Include="MemoryRegionEnumerator.h" />
+    <ClInclude Include="PerformanceInfo.h" />
+    <ClInclude Include="ProcessEnumerator.h" />
+    <ClInclude Include="ProcessMemoryInfo.h" />
+    <ClInclude Include="report.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="thModuleEnumerator.h" />
+    <ClInclude Include="thProcessEnumerator.h" />
+    <ClInclude Include="thThreadEnumerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\third_party\sqlite3\sqlite3.c" />
+    <ClCompile Include="..\third_party\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\third_party\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="DllEnumerator.cpp" />
+    <ClCompile Include="DriverEnumerator.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="PdhProcess.cpp" />
+    <ClCompile Include="pdhProcessEnumerator.cpp" />
+    <ClCompile Include="PdhSample.cpp" />
+    <ClCompile Include="PdhTest.cpp" />
+    <ClCompile Include="PerfObjEnumerator.cpp" />
+    <ClCompile Include="SqliteWritter.cpp" />
+    <ClCompile Include="thHeapEnumerator.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryRegionEnumerator.cpp" />
+    <ClCompile Include="PerformanceInfo.cpp" />
+    <ClCompile Include="ProcessEnumerator.cpp" />
+    <ClCompile Include="ProcessMemoryInfo.cpp" />
+    <ClCompile Include="report.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="thModuleEnumerator.cpp" />
+    <ClCompile Include="thProcessEnumerator.cpp" />
+    <ClCompile Include="thThreadEnumerator.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
